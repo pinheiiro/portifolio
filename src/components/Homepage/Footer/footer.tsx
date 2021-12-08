@@ -8,23 +8,23 @@ import github from '../../../assets/github.svg';
 
 const Footer : NextPage = () => {
     return (
-    <>
-        <a target="_blank" href="https://linkedin.com/in/pinheiiro">
-            <Image
-                src={linkedin}
-                alt="linkedin"
-            />
-        </a>
+        <footer>
+            <a target="_blank" href="https://linkedin.com/in/pinheiiro">
+                <Image
+                    src={linkedin}
+                    alt="linkedin"
+                />
+            </a>
 
-        <a target="_blank" href="https://github.com/pinheiiro">
-            <Image
-                src={github}
-                alt="github"
-            />
-        </a>
+            <a target="_blank" href="https://github.com/pinheiiro">
+                <Image
+                    src={github}
+                    alt="github"
+                />
+            </a>
 
-        <Rodape>Desenvolvido por Gabriel Pinheiro</Rodape>
-    </>
+            <Rodape>Desenvolvido por Gabriel Pinheiro</Rodape>
+        </footer>
     )
 }
 

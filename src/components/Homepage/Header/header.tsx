@@ -6,29 +6,29 @@ import eua from '../../../assets/eua.svg';
 
 const Header: NextPage = () => {
     return (
-    <>
-        <div>
-            <button>
-                <Image
-                    src={br}
-                    alt="br"
-                    width={30}
-                    height={30}
-                />
-            </button>
-            <button>
-                <Image
-                    src={eua}
-                    alt="eua"
-                    width={30}
-                    height={30}
-                />
-            </button>
-        </div>
-        <div>
-            <h1> Gabriel Pinheiro <br/> <strong> Programador </strong> </h1>
-        </div>    
-    </>
+        <header>
+            <div>
+                <button>
+                    <Image
+                        src={br}
+                        alt="br"
+                        width={30}
+                        height={30}
+                    />
+                </button>
+                <button>
+                    <Image
+                        src={eua}
+                        alt="eua"
+                        width={30}
+                        height={30}
+                    />
+                </button>
+            </div>
+            <div>
+                <h1> Gabriel Pinheiro <br/> <strong> Programador </strong> </h1>
+            </div>    
+        </header>
     )
 }
 

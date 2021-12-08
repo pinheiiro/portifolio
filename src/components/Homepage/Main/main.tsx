@@ -41,25 +41,25 @@ const Main : NextPage = () => {
     ];
 
     return (
-    <>
-        {links.map((link) => {
-            return (
-                <Link href={link.pag}>
-                    <Div>
-                        <Image
-                            src={link.src}
-                            alt={link.alt}
-                        />
-                        {link.nome}
-                        <Image
-                            src={seta}
-                            alt={`seta${link.nome}`}
-                        />
-                    </Div>
-                </Link>
-            );
-        })}
-    </>
+        <main>
+            {links.map((link) => {
+                return (
+                    <Link href={link.pag}>
+                        <Div>
+                            <Image
+                                src={link.src}
+                                alt={link.alt}
+                            />
+                            {link.nome}
+                            <Image
+                                src={seta}
+                                alt={`seta${link.nome}`}
+                            />
+                        </Div>
+                    </Link>
+                );
+            })}
+        </main>
     )
 }
 
