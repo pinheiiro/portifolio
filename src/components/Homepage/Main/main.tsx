@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import type { NextComponentType } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -11,7 +11,7 @@ import imgContato from '../../../assets/contato.svg';
 import imgProjetos from '../../../assets/projetos.svg';
 import imgServicos from '../../../assets/servicos.svg';
 
-const Main : NextPage = () => {
+const Main : NextComponentType = () => {
 
     const links = [
         {
@@ -44,7 +44,7 @@ const Main : NextPage = () => {
         <main>
             {links.map((link) => {
                 return (
-                    <Link href={link.pag}>
+                    <Link href={link.pag} key={link.nome}>
                         <Div>
                             <Image
                                 src={link.src}

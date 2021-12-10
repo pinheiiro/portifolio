@@ -1,0 +1,13 @@
+
+.voltar {
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    color: #56CCF2;
+    display: flex;
+    font-size: 1rem;
+}
+
+.voltar:hover{
+    cursor: pointer;
+}

@@ -1,10 +1,10 @@
-import type { NextPage } from 'next';
+import type { NextComponentType } from 'next';
 import Image from 'next/image';
 
 import br from '../../../assets/br.svg';
 import eua from '../../../assets/eua.svg';
 
-const Header: NextPage = () => {
+const Header: NextComponentType = () => {
     return (
         <header>
             <div>

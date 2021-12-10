@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Voltar from '../components/voltar';
 
 const Projetos: NextPage = () => {
     return (
@@ -7,6 +8,8 @@ const Projetos: NextPage = () => {
         <Head>
             <title>Projetos</title>
         </Head>
+        
+        <Voltar/>
         <h2>Página de Projetos</h2>
     </>
     )
