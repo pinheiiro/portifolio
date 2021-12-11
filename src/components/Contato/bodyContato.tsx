@@ -31,7 +31,7 @@ const BodyContato: NextComponentType = () => {
         <div>
             {contatos.map((contato) => {
                 return (
-                    <div>
+                    <div key={contato.titulo}>
                         <Image
                             src={contato.img}
                             alt={contato.titulo}
