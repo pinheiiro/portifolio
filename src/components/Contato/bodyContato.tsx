@@ -1,9 +1,12 @@
 import { NextComponentType } from 'next';
 import Image from 'next/image';
+import { useState } from 'react';
 
 import imgEmail from '../../assets/email.svg';
 import imgTelefone from '../../assets/telefone.svg';
 import imgLocalizacao from '../../assets/localizacao.svg';
+
+import ModalForm from './ModalForm/modalForm';
 
 const BodyContato: NextComponentType = () => {
 
@@ -25,6 +28,16 @@ const BodyContato: NextComponentType = () => {
         }
     ]
 
+    const [modal, setModal] = useState(false);
+
+    function onModal() {
+        setModal(true);
+    }
+
+    function offModal() {
+        setModal(false);
+    }
+
     return (
     <>
         <h1>Contato</h1>
@@ -42,7 +55,8 @@ const BodyContato: NextComponentType = () => {
                 )
             })}
         </div>
-        <button>Envie uma mensagem</button>
+        <button onClick={onModal}>Envie uma mensagem</button>
+        <ModalForm state={modal} offModal={offModal}/>
     </>
     )
 }
