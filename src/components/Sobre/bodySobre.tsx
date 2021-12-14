@@ -3,11 +3,12 @@ import Image from 'next/image';
 
 import pessoa from '../../assets/pessoa.png';
 
+import { H1 } from './style'
 
 const bodySobre: NextComponentType = () => {
     return (
     <>
-        <h1>Quem sou eu ?</h1>
+        <H1>Quem sou eu ?</H1>
         <div>
             <Image
                 src={pessoa}

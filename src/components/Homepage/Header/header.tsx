@@ -1,13 +1,15 @@
 import type { NextComponentType } from 'next';
 import Image from 'next/image';
 
+import { Body } from './style';
+
 import br from '../../../assets/br.svg';
 import eua from '../../../assets/eua.svg';
 
 const Header: NextComponentType = () => {
     return (
-        <header>
-            <div>
+        <Body>
+            <div className="botoes">
                 <button>
                     <Image
                         src={br}
@@ -25,10 +27,8 @@ const Header: NextComponentType = () => {
                     />
                 </button>
             </div>
-            <div>
-                <h1> Gabriel Pinheiro <br/> <strong> Programador </strong> </h1>
-            </div>    
-        </header>
+            <h1> Gabriel Pinheiro <br/> <strong> Programador </strong> </h1>
+        </Body>
     )
 }
 

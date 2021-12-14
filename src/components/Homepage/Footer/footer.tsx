@@ -8,11 +8,13 @@ import github from '../../../assets/github.svg';
 
 const Footer : NextComponentType = () => {
     return (
-        <footer>
+        <Rodape>
             <a target="_blank" href="https://linkedin.com/in/pinheiiro">
                 <Image
                     src={linkedin}
                     alt="linkedin"
+                    width={50}
+                    height={50}
                 />
             </a>
 
@@ -20,11 +22,11 @@ const Footer : NextComponentType = () => {
                 <Image
                     src={github}
                     alt="github"
+                    width={50}
+                    height={50}
                 />
             </a>
-
-            <Rodape>Desenvolvido por Gabriel Pinheiro</Rodape>
-        </footer>
+        </Rodape>
     )
 }
 

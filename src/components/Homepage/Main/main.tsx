@@ -2,7 +2,7 @@ import type { NextComponentType } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { Div } from './style';
+import { Body } from './style';
 
 import seta from '../../../assets/seta.svg';
 
@@ -41,25 +41,27 @@ const Main : NextComponentType = () => {
     ];
 
     return (
-        <main>
+        <Body>
             {links.map((link) => {
                 return (
                     <Link href={link.pag} key={link.nome}>
-                        <Div>
+                        <div className="card">
                             <Image
                                 src={link.src}
                                 alt={link.alt}
                             />
-                            {link.nome}
-                            <Image
-                                src={seta}
-                                alt={`seta${link.nome}`}
-                            />
-                        </Div>
+                            <div className="titulo">
+                                {link.nome}
+                                <Image
+                                    src={seta}
+                                    alt={`seta${link.nome}`}
+                                />
+                            </div>
+                        </div>
                     </Link>
                 );
             })}
-        </main>
+        </Body>
     )
 }
 

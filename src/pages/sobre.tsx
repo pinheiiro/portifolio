@@ -4,10 +4,10 @@ import Body from '../components/Sobre/bodySobre';
 
 const Sobre : NextPage = () => {
     return (
-    <>
-        <Voltar/>
-        <Body/>
-    </>
+        <div className="sobre">
+            <Voltar/>
+            <Body/>
+        </div>
     )
 }
 

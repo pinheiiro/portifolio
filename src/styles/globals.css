@@ -20,3 +20,26 @@ button {
 * {
   box-sizing: border-box;
 }
+
+/* Estilização da Página Home do Site */
+.homepage {
+  margin: 0 auto;
+
+  max-width: 1366px;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 2fr 0.7fr;
+  grid-template-areas: "h" "m" "f";
+}
+
+/* Estilização da Página Sobre do Site */
+.sobre {
+  margin: 0 auto;
+
+  max-width: 1366px;
+  width: 100vw;
+  height: 100vh;
+}
