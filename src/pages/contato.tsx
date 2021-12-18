@@ -4,10 +4,10 @@ import Body from '../components/Contato/bodyContato';
 
 const Contato: NextPage = () => {
     return (
-    <>
-        <Voltar/>
-        <Body/>
-    </>
+        <div className="contato">
+            <Voltar/>
+            <Body/>
+        </div>
     )
 }
 

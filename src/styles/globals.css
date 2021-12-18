@@ -43,3 +43,20 @@ button {
   width: 100vw;
   height: 100vh;
 }
+
+/* Estilização da Página Contato do Site */
+.contato {
+  margin: 0 auto;
+
+  max-width: 1366px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.servicos {
+  margin: 0 auto;
+
+  max-width: 1366px;
+  width: 100vw;
+  height: 100vh;
+}

@@ -27,7 +27,9 @@ const Header: NextComponentType = () => {
                     />
                 </button>
             </div>
-            <h1> Gabriel Pinheiro <br/> <strong> Programador </strong> </h1>
+            <div className="titulo">
+                <h1> Gabriel Pinheiro <br/> <strong> Programador </strong> </h1>
+            </div>
         </Body>
     )
 }

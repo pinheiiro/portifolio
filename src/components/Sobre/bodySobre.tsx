@@ -3,17 +3,22 @@ import Image from 'next/image';
 
 import pessoa from '../../assets/pessoa.png';
 
-import { H1 } from './style'
+import { H1, Div } from './style'
 
 const bodySobre: NextComponentType = () => {
     return (
     <>
         <H1>Quem sou eu ?</H1>
-        <div>
-            <Image
-                src={pessoa}
-                alt="Foto de Gabriel"
-            />
+        <Div>
+            <div className="imagem">
+                <Image
+                    src={pessoa}
+                    alt="Foto de Gabriel"
+                    width={200}
+                    height={400}
+                />
+            </div>
+            <div className="desc">
             <p>
                 It is a long established fact that a 
                 reader will be distracted by the readable 
@@ -35,7 +40,8 @@ const bodySobre: NextComponentType = () => {
                 and going through the cites of the word in classical literature,
                 discovered the undoubtable source.
             </p>
-        </div>
+            </div>
+        </Div>
     </>
     );
 }

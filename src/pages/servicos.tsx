@@ -4,10 +4,10 @@ import BodyServicos from '../components/Servicos/bodyServicos';
 
 const Servicos: NextPage = () => {
     return (
-    <>
-        <Voltar/>
-        <BodyServicos/>
-    </>
+        <div className="servicos">
+            <Voltar/>
+            <BodyServicos/>
+        </div>
     )
 }
 

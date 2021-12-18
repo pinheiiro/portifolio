@@ -4,14 +4,25 @@ export const Body = styled.div`
 
     grid-area: h;
 
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "txt btn";
+
     .botoes {
         text-align: end;
+        grid-area: btn;
+    }
+
+    .titulo {
+        grid-area: txt;
     }
 
     button {
         background: none;
         border: none;
-        margin: 5px
+        margin-top: 15px;
+        margin-left: 10px;
     }
 
     h1 {
