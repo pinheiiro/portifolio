@@ -34,20 +34,5 @@ export const Div = styled.div`
         font-size: 1rem;
         font-weight: 500;
     }
-
+    
 `
-
-/*
-
-    width: 100%;
-    display: flex;
-
-    font-family: 'IBM Plex Sans', sans-serif;
-
-    div {
-        width: 33%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-*/

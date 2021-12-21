@@ -1,4 +1,7 @@
 import { NextComponentType } from 'next';
+import { Carousel } from '../Slider/slider';
+
+import { Div } from './style';
 
 const Apis : NextComponentType = () => {
 
@@ -14,16 +17,22 @@ const Apis : NextComponentType = () => {
     ]
 
     return (
-    <>
-        {apis.map((api) => {
-            return (
-                <div key={api.titulo}>
-                    <h2>{api.titulo}</h2>
-                    <p>{api.desc}</p>
-                </div>
-            )
-        })}
-    </>
+    <Div>
+        <Carousel>
+            {apis.map((api) => {
+                return (
+                    <div className="card" key={api.titulo}>
+                        <h2>{api.titulo}</h2>
+                        <p>{api.desc}</p>
+                        <h5>Olá</h5>
+                        <div className="btn">
+                            <button>Ver Projeto</button>
+                        </div>
+                    </div>
+                )
+            })}
+        </Carousel>
+    </Div>
     )
 }
 

@@ -6,14 +6,14 @@ import BodyProjetos from '../components/Projetos/bodyProjetos';
 
 const Projetos: NextPage = () => {
     return (
-    <>
-        <Head>
-            <title>Projetos</title>
-        </Head>
+        <div className="projetos">
+            <Head>
+                <title>Projetos</title>
+            </Head>
 
-        <Voltar/>
-        <BodyProjetos/>
-    </>
+            <Voltar/>
+            <BodyProjetos/>
+        </div>
     )
 }
 
