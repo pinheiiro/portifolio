@@ -29,10 +29,14 @@ const ModalForm = ({state, offModal}: IModal) => {
                 />
             </Button>
             <H2>Preencha o formulário e entre <br/> em contato agora mesmo</H2>
-            <Form action="">
-                <input type="text" placeholder="Nome" required/>
-                <input type="email" placeholder="Email" required/>
-                <input type="text" placeholder="Assunto" required/>
+            <Form 
+                action="https://formsubmit.co/china.cmprs@gmail.com"
+                method="POST"
+            >
+                <input type="hidden" name="_autoresponse" value="Agradeço pelo contato, logo em breve entrarei em contato"></input>
+                <input type="text" name="name" placeholder="Nome" required/>
+                <input type="email" name="email" placeholder="Email" required/>
+                <input type="text" name="assunto" placeholder="Assunto" required/>
                 <textarea name="mensagem" id="" placeholder="Mensagem" required />
                 <button type="submit">Enviar</button>
             </Form>
