@@ -61,7 +61,14 @@ export const Button = styled.button`
     font-weight: bold;
     font-size: 1.6rem;
 
+    transition: filter 0.2s;
+
     &:hover {
+        filter: brightness(.8);
+    }
+
+    @media (max-width: 785px) {
         
     }
+
 `

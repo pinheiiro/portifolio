@@ -31,7 +31,7 @@ export const Body = styled.div`
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: bold;
 
-        margin-left: 50px;
+        margin-left: 3.125rem;
     }
 
     strong {
@@ -39,4 +39,25 @@ export const Body = styled.div`
         font-size: 4rem;
     }
 
+    @media (max-width: 625px) {
+        display: block;
+
+        .botoes {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 499px) {
+        .titulo {
+            display: flex;
+            justify-content: center;
+        }
+        .titulo h1 {
+            font-size: 4rem;
+            margin-left: 0;
+        }
+        .titulo h1 strong {
+            font-size: 3.5rem;
+        }
+    }
 `

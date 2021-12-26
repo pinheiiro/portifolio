@@ -10,4 +10,12 @@ export const Rodape = styled.footer`
         text-align: center;
     }
 
+    @media (max-width: 815px) {
+        margin-top: 3.125rem;
+    }
+
+    @media (max-width: 499px) {
+        margin-top: 3.5rem;
+    }
+
 `

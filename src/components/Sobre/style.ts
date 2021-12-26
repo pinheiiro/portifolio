@@ -7,6 +7,11 @@ export const H1 = styled.h1`
 
     color: #EB5757;
     margin-left: 120px;
+
+    @media (max-width: 768px) {
+        text-align: center;
+        margin-left: 0;
+    }
 `
 
 export const Div = styled.div`
@@ -34,6 +39,11 @@ export const Div = styled.div`
         font-size: 1.3rem;
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 365px 365px;
     }
 
 `

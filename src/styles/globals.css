@@ -185,3 +185,29 @@ button {
     opacity: .75;
     color: #EB5757;
 }
+
+/* Media Query para Responsividade do Site */
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 1010px) {
+  html {
+    font-size: 87.50%;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 81.30%;
+  }
+}
