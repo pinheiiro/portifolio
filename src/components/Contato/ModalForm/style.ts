@@ -7,6 +7,16 @@ export const H2 = styled.h2`
     font-size: 1.8rem;
     margin-top: 0;
     margin-bottom: 2.5rem;
+
+    @media (max-width: 479px) {
+        br {
+            display: none;
+        }
+    }
+
+    @media (max-width: 330px) {
+        margin-bottom: 1rem;
+    }
 `
 
 export const Button = styled.button`
@@ -15,6 +25,25 @@ export const Button = styled.button`
     border: none;
     top: 25px;
     left: 30px;
+
+    @media (max-width: 600px) {
+        left: 15px;
+    }
+
+    @media (max-width: 550px) {
+        left: 5px;
+    }
+
+    @media (max-width: 479px) {
+        position: relative;
+        top: -10px;
+        left: -15px;
+    }
+
+    @media (max-width: 330px) {
+        top: -5px;
+        margin-bottom: 0.3rem;
+    }
 `
 
 export const Form = styled.form`

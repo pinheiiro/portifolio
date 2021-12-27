@@ -6,6 +6,13 @@ export const Container = styled.div`
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "h" "m" "f";
     grid-gap: 30px;
+
+    @media (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 `
 
 export const H1 = styled.h1`
@@ -19,6 +26,10 @@ export const H1 = styled.h1`
     color: #EB5757;
 
     grid-area: h;
+
+    @media (max-width: 450px) {
+        margin-left: 0;
+    }
 `
 
 export const Div = styled.div`
@@ -43,6 +54,13 @@ export const Div = styled.div`
     h4 {
         line-height: 0;
     }
+
+    @media (max-width: 450px) {
+        display: block;
+        div + div {
+            margin-top: 5rem;
+        }
+    }
 `
 
 export const Button = styled.button`
@@ -50,8 +68,8 @@ export const Button = styled.button`
     margin: 0 auto;
     margin-top: 80px;
 
-    width: 35%;
-    height: 25%;
+    width: 20rem;
+    height: 3rem;
     border: none;
     background-color: #EB5757;
     color: white;
@@ -59,7 +77,7 @@ export const Button = styled.button`
 
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 
     transition: filter 0.2s;
 
@@ -67,8 +85,8 @@ export const Button = styled.button`
         filter: brightness(.8);
     }
 
-    @media (max-width: 785px) {
-        
+    @media (max-width: 450px) {
+        margin-top: 0;
+        margin-bottom: 1rem;
     }
-
 `
