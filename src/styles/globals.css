@@ -40,7 +40,7 @@ button {
   margin: 0 auto;
 
   max-width: 1366px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -49,7 +49,7 @@ button {
   margin: 0 auto;
 
   max-width: 1366px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -58,7 +58,7 @@ button {
   margin: 0 auto;
 
   max-width: 1366px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -188,26 +188,20 @@ button {
 
 /* Media Query para Responsividade do Site */
 
-@media (max-width: 1080px) {
+@media (max-width: 1090px) {
   html {
     font-size: 93.75%;
   }
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 93.75%;
-  }
-}
-
-@media (max-width: 1010px) {
+@media (max-width: 1022px) {
   html {
     font-size: 87.50%;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 960px) {
   html {
-    font-size: 81.30%;
+    font-size: 81.25%;
   }
 }

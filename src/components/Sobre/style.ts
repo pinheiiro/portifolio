@@ -12,6 +12,15 @@ export const H1 = styled.h1`
         text-align: center;
         margin-left: 0;
     }
+    
+    @media (max-width: 600px) {
+        font-size: 3.5rem;
+        padding: 5% 0;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 3rem;
+    }
 `
 
 export const Div = styled.div`
@@ -43,4 +52,17 @@ export const Div = styled.div`
         font-weight: bold;
     }
 
+    @media (max-width: 600px) {
+        .imagem {
+            display: none;
+        }
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    @media (max-width: 400px) {
+        p { 
+            text-align: initial;
+        }
+    }
 `

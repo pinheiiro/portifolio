@@ -8,20 +8,24 @@ export const H1 = styled.h1`
     color: #EB5757;
     margin-left: 120px;
     line-height: 0;
+
+    @media (max-width: 585px) {
+        margin-left: 0;
+        text-align: center;
+    }
 `
 
 export const Div = styled.div`
     width: 100%;
     margin-top: 15%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(6.25rem, 21.875rem));
     grid-auto-rows: 1fr;
-    gap: 20px;
+    justify-content: center;
+    gap: 1.25rem;
 
     div {
-        margin: 0 auto;
         text-align: center;
-        padding: 0 10px;
         font-family: 'IBM Plex Sans', sans-serif;
     }
 
@@ -35,4 +39,14 @@ export const Div = styled.div`
         font-weight: 500;
     }
     
+    @media (max-width: 960px) {
+        gap: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (max-width: 585px) {
+        gap: 1.25rem;
+        margin-top: 20%;
+    }
 `
