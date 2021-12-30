@@ -8,6 +8,8 @@ export const H1 = styled.h1`
     color: #EB5757;
     margin-left: 120px;
 
+    // Resposividade ⬇
+
     @media (max-width: 768px) {
         text-align: center;
         margin-left: 0;
@@ -52,6 +54,8 @@ export const Div = styled.div`
         font-weight: bold;
     }
 
+    // Resposividade ⬇
+
     @media (max-width: 600px) {
         .imagem {
             display: none;
@@ -60,7 +64,7 @@ export const Div = styled.div`
         justify-content: center;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 530px) {
         p { 
             text-align: initial;
         }

@@ -8,6 +8,8 @@ export const H2 = styled.h2`
     margin-top: 0;
     margin-bottom: 2.5rem;
 
+    // Resposividade ⬇
+
     @media (max-width: 479px) {
         br {
             display: none;
@@ -25,6 +27,8 @@ export const Button = styled.button`
     border: none;
     top: 25px;
     left: 30px;
+
+    // Resposividade ⬇
 
     @media (max-width: 600px) {
         left: 15px;

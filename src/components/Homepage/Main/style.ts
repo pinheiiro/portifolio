@@ -12,20 +12,12 @@ export const Body = styled.main`
     align-items: center;
     margin: 0 20px;
 
-/*
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-*/
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: bold;
     font-size: 1.8rem;
 
 
     .card {
-        //width: 13.5rem;
-
         padding-top: 0.625rem;
 
         display: flex;
@@ -41,6 +33,8 @@ export const Body = styled.main`
         align-items: center;
         justify-content: space-around;
     }
+
+    // Resposividade ⬇
 
     @media (max-width: 950px) {
         gap: 1.5rem;

@@ -10,6 +10,8 @@ export const Rodape = styled.footer`
         text-align: center;
     }
 
+    // Resposividade ⬇
+
     @media (max-width: 815px) {
         margin-top: 3.125rem;
     }

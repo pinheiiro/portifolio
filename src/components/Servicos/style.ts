@@ -9,6 +9,8 @@ export const H1 = styled.h1`
     margin-left: 120px;
     line-height: 0;
 
+    // Resposividade ⬇
+
     @media (max-width: 585px) {
         margin-left: 0;
         text-align: center;
@@ -38,6 +40,8 @@ export const Div = styled.div`
         font-size: 1rem;
         font-weight: 500;
     }
+
+    // Resposividade ⬇
     
     @media (max-width: 960px) {
         gap: 0;

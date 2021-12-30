@@ -101,6 +101,15 @@ button {
     right: -35px !important;
 }
 
+@media (max-width: 500px) {
+  .slick-prev {
+    left: -30px !important;
+  }
+  .slick-next {
+    right: -30px !important;
+  }
+}
+
 /* Estilização dos Dots do Slide de Projetos */
 .dots
 {

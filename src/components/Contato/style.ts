@@ -7,6 +7,8 @@ export const Container = styled.div`
     grid-template-areas: "h" "m" "f";
     grid-gap: 30px;
 
+    // Resposividade ⬇
+
     @media (max-width: 450px) {
         display: flex;
         flex-direction: column;
@@ -27,8 +29,11 @@ export const H1 = styled.h1`
 
     grid-area: h;
 
-    @media (max-width: 450px) {
+    // Resposividade ⬇
+
+    @media (max-width: 760px) {
         margin-left: 0;
+        text-align: center;
     }
 `
 
@@ -54,6 +59,8 @@ export const Div = styled.div`
     h4 {
         line-height: 0;
     }
+
+    // Resposividade ⬇
 
     @media (max-width: 450px) {
         display: block;
@@ -84,6 +91,8 @@ export const Button = styled.button`
     &:hover {
         filter: brightness(.8);
     }
+
+    // Resposividade ⬇
 
     @media (max-width: 450px) {
         margin-top: 0;

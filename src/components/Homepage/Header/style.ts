@@ -39,6 +39,8 @@ export const Body = styled.div`
         font-size: 4rem;
     }
 
+    // Resposividade ⬇
+
     @media (max-width: 625px) {
         display: block;
 
