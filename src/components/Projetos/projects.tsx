@@ -51,7 +51,7 @@ export const Projects: NextComponentType = () => {
                             </div>
                             <div className="btn">
                                 <Link href={project.url}>
-                                    <a target='_blank' rel="noopener noreferrer">
+                                    <a target='_blank' rel="noreferrer">
                                         <button>Ver Projeto</button>
                                     </a>
                                 </Link>
