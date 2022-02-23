@@ -71,6 +71,12 @@ button {
   height: 100vh;
 }
 
+/* Estilização da Página de Comming Soon do Site */
+.commingsoon h1 {
+  margin-top: 6rem;
+  text-align: center;
+}
+
 /* Estilização do Modal de Contato */
 .react-modal-overlay {
   background: rgba(0, 0, 0, 0.6);

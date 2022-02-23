@@ -1,5 +1,6 @@
 import type { NextComponentType } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Body } from './style';
 
@@ -18,17 +19,19 @@ const Header: NextComponentType = () => {
                         height={30}
                     />
                 </button>
-                <button>
-                    <Image
-                        src={eua}
-                        alt="eua"
-                        width={30}
-                        height={30}
-                    />
-                </button>
+                <Link href='/commingsoon'>
+                    <button>
+                        <Image
+                            src={eua}
+                            alt="eua"
+                            width={30}
+                            height={30}
+                        />
+                    </button>
+                </Link>
             </div>
             <div className="titulo">
-                <h1> Gabriel Pinheiro <br/> <strong> Programador </strong> </h1>
+                <h1> Gabriel Pinheiro <br/> <strong> Desenvolvedor </strong> </h1>
             </div>
         </Body>
     )

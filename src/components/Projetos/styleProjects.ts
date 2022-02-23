@@ -1,4 +1,24 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+
+/**
+ * Esse é um arquivo de estilo alternativo aos arquivo style.ts do
+ * bodyProjetos.tsx e style.ts do sites.tsx
+ */
+
+export const H1 = styled.h1`
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    font-size: 4.5rem;
+
+    color: #EB5757;
+    margin-left: 12%;
+    line-height: 1;
+
+    @media (max-width: 800px) {
+        margin-left: 0;
+        text-align: center;
+    }
+`
 
 export const Div = styled.div`
     width: 80%;
@@ -26,9 +46,11 @@ export const Div = styled.div`
             font-size: 2rem;
         }
 
-        h5 {
+        .img {
             grid-area: img;
-            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         p {
@@ -45,9 +67,14 @@ export const Div = styled.div`
             align-items: end;
         }
 
+        a {
+            width: 95%;
+        }
+
         button {
             width: 95%;
             height: 50%;
+            padding: 10px;
             border: none;
             background-color: #EB5757;
             color: white;
@@ -72,7 +99,7 @@ export const Div = styled.div`
 
         @media (max-width: 500px) {
 
-            h5 {
+            .img {
                 display: none;
             }
 
@@ -99,6 +126,10 @@ export const Div = styled.div`
                 align-items: center;
             }
 
+            button {
+                padding: 5px;
+                margin-bottom: 10px;
+            }
         }
     }
 `

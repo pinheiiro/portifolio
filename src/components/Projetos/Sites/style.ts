@@ -45,6 +45,10 @@ export const Div = styled.div`
             align-items: end;
         }
 
+        a {
+            width: 95%;
+        }
+
         button {
             width: 95%;
             height: 50%;
@@ -77,7 +81,7 @@ export const Div = styled.div`
             }
 
             grid-template-columns: 1fr;
-            grid-template-rows: 35px 60px 25px;
+            grid-template-rows: 35px 60px 30px;
             grid-template-areas: "titulo" "desc" "btn";
                 
             h2 {
@@ -94,7 +98,7 @@ export const Div = styled.div`
             .btn {
                 grid-area: btn;
                 width: 50%;
-                height: 30px;
+                height: 40px;
                 margin: 0 auto;
                 align-items: center;
             }

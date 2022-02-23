@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Voltar from '../components/voltar';
 
 import BodyProjetos from '../components/Projetos/bodyProjetos';
+import { Projects } from '../components/Projetos/projects';
 
 const Projetos: NextPage = () => {
     return (
@@ -12,9 +13,13 @@ const Projetos: NextPage = () => {
             </Head>
 
             <Voltar/>
-            <BodyProjetos/>
+            <Projects/>
         </div>
     )
 }
 
 export default Projetos;
+
+/**
+ * <BodyProjetos/>
+ */

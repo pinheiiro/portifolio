@@ -9,10 +9,12 @@ const Site : NextComponentType = () => {
         {
             titulo: 'Quiz',
             desc: 'Um quiz de perguntas e respostas',
+            url: 'https://p-quiz.netlify.app/'
         },
         {
             titulo: 'Análise de Viagens',
-            desc: 'Um site que dá dicas de lugares interessantes pelo mundo'
+            desc: 'Um site que dá dicas de lugares interessantes pelo mundo',
+            url: 'https://google.com'
         }
     ]
 
@@ -26,7 +28,9 @@ const Site : NextComponentType = () => {
                         <p>{site.desc}</p>
                         <h5>Olá</h5>
                         <div className="btn">
-                            <button>Ver Projeto</button>
+                            <a target="_blank" href={site.url}>
+                                <button>Ver Projeto</button>
+                            </a>
                         </div>
                     </div>
                 )
