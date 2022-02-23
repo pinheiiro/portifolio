@@ -1,6 +1,5 @@
 import { NextComponentType } from 'next';
 import { Carousel } from './Slider/slider';
-import Link from 'next/link';
 import Image from 'next/image';
 
 import { H1, Div } from './styleProjects';
@@ -50,11 +49,9 @@ export const Projects: NextComponentType = () => {
                                 />
                             </div>
                             <div className="btn">
-                                <Link href={project.url}>
-                                    <a target='_blank' rel="noreferrer">
-                                        <button>Ver Projeto</button>
-                                    </a>
-                                </Link>
+                                <a target='_blank' href={project.url} rel="noopener noreferrer">
+                                    <button>Ver Projeto</button>
+                                </a>
                             </div>
                         </div>
                     )

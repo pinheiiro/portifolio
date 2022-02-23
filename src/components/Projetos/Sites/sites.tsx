@@ -28,7 +28,7 @@ const Site : NextComponentType = () => {
                         <p>{site.desc}</p>
                         <h5>Olá</h5>
                         <div className="btn">
-                            <a target="_blank" href={site.url}>
+                            <a target="_blank" href={site.url} rel="noopener noreferrer">
                                 <button>Ver Projeto</button>
                             </a>
                         </div>
