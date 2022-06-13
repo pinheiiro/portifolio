@@ -18,12 +18,12 @@ const BodyServicos: NextComponentType = () => {
         {
             icon: backend,
             titulo: 'Desenvolvimento de Back-end',
-            texto: 'Criação de API completas com Node JS e integração com base de dados da sua preferência, além de fluxo de autenticação e etc ...'
+            texto: 'Criação de API completas com Node JS e integração com base de dados da sua preferência, além de fluxo de autenticação, validações e etc ...'
         },
         {
             icon: frontend,
             titulo: 'Desenvolvimento de Front-End',
-            texto: 'Criação de sites com as tecnologias atuais e mais utilizadas no mercado. HTML, CSS, JavaScript, React'
+            texto: 'Criação de sites com as tecnologias atuais e mais utilizadas no mercado. HTML, CSS, JavaScript, React e etc ...'
         },
     ]
 
