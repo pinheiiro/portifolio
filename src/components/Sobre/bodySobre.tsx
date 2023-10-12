@@ -1,9 +1,24 @@
 import type { NextComponentType } from 'next';
 
 import { H1, Div } from './style';
-import { SiMongodb, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiPostgresql, SiMysql } from 'react-icons/si';
+import { SiMongodb, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiSpring, SiMicrosoftsqlserver, SiPostgresql } from 'react-icons/si';
 
 const bodySobre: NextComponentType = () => {
+
+    function calcularIdade(dia: number, mes: number, ano: number): number {
+        let hoje = new Date();
+        let dataNascimento = new Date(ano, mes - 1, dia);
+        let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+        let m = hoje.getMonth() - dataNascimento.getMonth();
+    
+        if (m < 0 || (m === 0 && hoje.getDate() < dataNascimento.getDate())) {
+            idade--;
+        }
+    
+        return idade;
+    }    
+     
+
     return (
     <>
         <H1>Quem sou eu ?</H1>
@@ -15,7 +30,7 @@ const bodySobre: NextComponentType = () => {
                         <h3>
                             Gabriel Pinheiro
                             <br />
-                            <strong> 23 Anos </strong>
+                            <strong>{calcularIdade(16, 11, 1998)} Anos</strong>
                         </h3>
                         <div className="icons">
                             <SiHtml5 color='#E34F26'/>
@@ -24,9 +39,9 @@ const bodySobre: NextComponentType = () => {
                             <SiTypescript color='#3178C6'/>
                             <SiReact color='#61DAFB'/>
                             <SiNextdotjs color='#ffffff'/>
-                            <SiNodedotjs color='#339933'/>
+                            <SiSpring color='#6DB33F'/>
                             <SiMongodb color='#47A248'/>
-                            <SiMysql color='#4479A1'/>
+                            <SiMicrosoftsqlserver color='#CC2927'/>
                             <SiPostgresql color='#4169E1'/>
                         </div>
                     </div>
@@ -34,7 +49,7 @@ const bodySobre: NextComponentType = () => {
             </div>
             <div className="desc">
                 <p>
-                    Graduando em Sistema de Informação na Universidade do Estado da Bahia, 
+                    Graduado em Sistema de Informação na Universidade do Estado da Bahia, 
                     sou um grande apaixonado por tecnologia.
                 </p>
                 <br />
@@ -47,17 +62,13 @@ const bodySobre: NextComponentType = () => {
                 </p>
                 <br />
                 <p>
-                    Após ter consolidado conhecimentos no Front-End, comecei a me aprofundar no Back-End com Node JS 
-                    criando aplicações integrando base de dados relacionais e não relacionais, utilizando conceitos de 
-                    arquitetura limpa, desenvolvendo APIs cada vez mais robustas visando segurança, boas práticas, validações, 
-                    código limpo e manutenível.
+                    Após ter consolidado conhecimentos no Front-End, comecei a me aprofundar no Back-End com Java
+                    criando desde APIs bem simples a integrações com base de dados relacionais e não relacionais através do ecossistema Spring, utilizando conceitos de 
+                    arquitetura limpa, desenvolvendo APIs cada vez mais robustas visando segurança, boas práticas, validações, código limpo e manutenível.
                 </p>
                 <br />
                 <p>
-                    Atualmente venho realizando projetos próprios tanto no Front quanto no Back, sempre buscando trazer 
-                    soluções viáveis para o mundo real tentando me desafiar a aprender algo mais para estar sempre me 
-                    aperfeiçoando, futuramente penso em mergulhar no mundo mobile para adquirir mais habilidades e trazer 
-                    novas soluções.
+                    Atualmente venho realizando projetos próprios e melhorando os conhecimentos na parte de microsserviços.
                 </p>
             </div>
         </Div>
